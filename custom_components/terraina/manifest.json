@@ -1,0 +1,10 @@
+{
+  "domain": "terraina",
+  "version": "1.0.0",
+  "name": "TERRAINA",
+  "codeowners": ["@DCK-China"],
+  "config_flow": true,
+  "documentation": "https://github.com/DCK-China/home-assistant-terraina",
+  "integration_type": "hub",
+  "iot_class": "local_polling"
+}

@@ -1,4 +1,4 @@
-# TERRAINA Integration Guide 
+# TERRAINA Integration Guide
 
 Version: 1.0.0
 
@@ -24,7 +24,7 @@ Version: 1.0.0
 
 ## Configuration Steps
 
-1. After installation, navigate to Home Assistant UI: **Settings → Devices & Services → Add Integration** → search for **TERRAINA**. 
+1. After installation, navigate to Home Assistant UI: **Settings → Devices & Services → Add Integration** → search for **TERRAINA**.
 
 2. Select your country and complete the OAuth login process.
 
@@ -39,7 +39,7 @@ Version: 1.0.0
 
 ### Back to Dock Service
 
-- A dedicated service is registered for each mower: `terraina.back_<device_name>_<serial_last_6_bits>`.
+- A dedicated service is registered for each mower: `terraina.back_<serial_slug>`.
 - Can be called via **Developer Tools → Services**, automations, or scripts.
 
 **Example automation / 自动化示例：**
@@ -51,7 +51,7 @@ automation:
       - platform: time
         at: "18:00:00"
     action:
-      - service: terraina.back_kdrm220_123456
+      - service: terraina.back_abc123456
 ```
 
 ### Entities
